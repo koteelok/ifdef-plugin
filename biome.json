@@ -1,0 +1,27 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "formatter": {
+    "ignore": ["node_modules", "dist", "package-lock.json"],
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "indentStyle": "space"
+  },
+  "organizeImports": {
+    "ignore": ["node_modules", "dist", "package-lock.json"],
+    "enabled": true
+  },
+  "linter": {
+    "ignore": ["node_modules", "dist", "package-lock.json"],
+    "rules": {
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noAssignInExpressions": "off",
+        "noDebugger": "off"
+      },
+      "complexity": {
+        "noBannedTypes": "off",
+        "useLiteralKeys": "off"
+      }
+    }
+  }
+}
